@@ -1,0 +1,125 @@
+
+body {
+    align-items: center;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+.left {
+    background-image:  url("../images/bg.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow-x: hidden;
+}
+
+.left:after {
+    content: "";
+    background-image: linear-gradient(135deg, #02CCBA 0%, #A951ED 100%);
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    opacity: .7;
+    z-index: -1;
+}
+
+.right {
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    padding: 20px 35px 20px 25px;
+    overflow-x: hidden;
+    color: #2e3d49;
+}
+
+.small {
+    border-radius: 50%;
+    width: 120px;
+    margin-right: 20px;
+    border: 1px solid #e6e5e5;
+    box-shadow: 0 5px 10px rgba(70, 66, 109, 0.73);
+    margin-bottom: 10px;
+    opacity: .9;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    width: 400px;
+}
+
+.left h1 {
+    margin: 90px auto;
+}
+
+.right h1 {
+    margin: 30px auto;
+}
+
+p:first-of-type {
+    margin-top: 100px;
+}
+
+h3, h4 {
+    font-weight: 300;
+}
+
+h4 {
+    color: #7d97ad;
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+button {
+    border: 1px solid #02b3e4;
+    margin-top: 50px;
+    background: white;
+    box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
+    color: #607D8B;
+    width: 100%;
+    text-transform: uppercase;
+    height: 40px;
+    font-weight: 600;
+    -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+button:hover {
+    -webkit-transform:scale(.9);
+      -moz-transform:scale(.9);
+      -ms-transform:scale(.9);
+      -o-transform:scale(.9);
+      transform:scale(.9);
+      cursor: pointer;
+      background: #02b3e4;
+      color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
