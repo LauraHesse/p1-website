@@ -1,4 +1,3 @@
-
 # Responsive Images: Project Part 1 #
 
 ## Your Goals: ##
