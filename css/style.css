@@ -1,125 +1,206 @@
-
 body {
     align-items: center;
-    font-weight: 300;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    background: #141a14;
+}
+
+p {
+    font-family:"Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+    line-height: 1.5rem;
+    margin: 0 20px 20px 20px;
+    text-align: left;
+}
+
+em {
+    color: #9a9898;
+}
+
+hr {
+    border: 1px dotted #DADADA;
+    min-width: 100%;
+    margin: 20px 0;
+}
+
+.header {
+    background-color: red;
+    min-width: 100%;
+    position: fixed;
+    opacity: .9;
+    z-index: 99;
+    top: 0;
+}
+
+.u-flowers {
     color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    width: 220px;
 }
 
-.left {
-    background-image:  url("../images/bg.jpg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    overflow-x: hidden;
+h1.healing-flowers {
+    color: #fff;
+    margin-top: 1rem;
 }
 
-.left:after {
-    content: "";
-    background-image: linear-gradient(135deg, #02CCBA 0%, #A951ED 100%);
-    float: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    opacity: .7;
-    z-index: -1;
+.logo {
+    left: 10px;
+    position: absolute;
+    width: 2rem;
 }
 
-.right {
-    float: right;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 45%;
-    padding: 20px 35px 20px 25px;
-    overflow-x: hidden;
-    color: #2e3d49;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1024px;
 }
 
-.small {
-    border-radius: 50%;
-    width: 120px;
-    margin-right: 20px;
-    border: 1px solid #e6e5e5;
-    box-shadow: 0 5px 10px rgba(70, 66, 109, 0.73);
-    margin-bottom: 10px;
+figure {
+    margin: 0;
+}
+
+picture img {
+    max-width: 100vw;
+    border-bottom: 1px solid #c7c6c6;
+    display: block;
+    /*max-width: 100%;*/
+    height: auto;
+}
+
+picture img.small{
+    border: 5px solid #cd1050;
+    margin: 0;
+}
+
+figcaption {
+    color: #cd1050;
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+}
+
+figcaption.main {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;                        /* horizontal alignment */
+    top: 50%;                         /* vertical alignment */
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
     opacity: .9;
 }
 
-h1 {
-    font-weight: 300;
-    font-size: 2.2rem;
-    width: 400px;
-}
-
-.left h1 {
-    margin: 90px auto;
-}
-
-.right h1 {
-    margin: 30px auto;
-}
-
-p:first-of-type {
-    margin-top: 100px;
-}
-
-h3, h4 {
-    font-weight: 300;
-}
-
-h4 {
-    color: #7d97ad;
-    font-size: 12px;
-    margin-top: -20px;
-}
-
-li {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-button {
-    border: 1px solid #02b3e4;
-    margin-top: 50px;
-    background: white;
-    box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
-    color: #607D8B;
+.main-headline {
+    background-color: #fff;
+    color: #0fa8d5;
     width: 100%;
-    text-transform: uppercase;
-    height: 40px;
-    font-weight: 600;
-    -webkit-transition:all 0.5s ease-out;
-  -moz-transition:all 0.5s ease-out;
-  -ms-transition:all 0.5s ease-out;
-  -o-transition:all 0.5s ease-out;
-  transition:all 0.5s ease-out;
+    font-size: 2rem;
+    margin-top: -30px;
 }
 
-button:hover {
-    -webkit-transform:scale(.9);
-      -moz-transform:scale(.9);
-      -ms-transform:scale(.9);
-      -o-transform:scale(.9);
-      transform:scale(.9);
-      cursor: pointer;
-      background: #02b3e4;
-      color: #fff;
+.font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.white-bg {
+    background-color: #fff;
+    display: flex;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    opacity: .9;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #9a9898;
+}
+
+@media screen and (min-width: 768px) {
+    .flowers-for-cancer {
+        width: 33%;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 769px) {  /* for iPad */
+    main {
+        width: inherit;
+    }
+    figcaption.main {
+        font-size: 3rem;
+        top: 30%;
+    }
+    .flowers-for-cancer {
+        border-bottom: 1px dashed #9a9898;
+        display: flex;
+        margin: 30px 20px;
+        width:100%;
+    }
+
+    .white-bg {
+        display: block;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 2rem;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {  /* for Nexus 5 */
+    figcaption.main {
+        top: 18%;
+        font-size: 1.5rem;
+    }
+
+    picture img, .intro {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    picture img.small{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        margin-left: 10px;
+    }
+
+    .main-headline {
+        margin-top: -40px;
+    }
+
+    .main-headline h1 {
+        font-size: 2rem;
+        border-bottom: 1px dashed #9a9898;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    .flowers-for-cancer {
+        margin: 20px 0 0 0;
+    }
+
+    .flowers-for-cancer figcaption {
+        display: none;
+    }
 }
